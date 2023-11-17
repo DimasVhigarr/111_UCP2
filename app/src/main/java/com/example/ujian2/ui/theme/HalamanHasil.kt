@@ -21,8 +21,6 @@ import com.example.ujian2.data.OrderUIState
 fun HalamanHasil(
     contactUiState: ContactUiState,
     onBackButtonclicked: () -> Unit,
-    orderUIState: OrderUIState,
-    onCancelButtonClicked: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -74,8 +72,6 @@ fun HalamanHasilPreview() {
     Ujian2Theme {
         HalamanHasil(
             contactUiState = ContactUiState(),
-            onBackButtonclicked = { /*TODO*/ },
-            orderUIState = OrderUIState(),
-            onCancelButtonClicked = { /*TODO*/ })
+            onBackButtonclicked = { /*TODO*/ })
     }
 }

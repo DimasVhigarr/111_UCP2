@@ -1,4 +1,5 @@
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class,
+    ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class,
     ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class
 )
 
@@ -145,9 +146,6 @@ fun HalamanSatu(
 @Composable
 fun HalamanSatuPreview() {
     Ujian2Theme {
-        HalamanSatu(
-            onSubmitButtonClicked ={} ,
-            pilihanDosen = listOf("dosen1", "dosen2", "dosen3"),
-            onSelectionChanged = {})
+        HalamanSatu(onSubmitButtonClicked = {}, pilihanDosen = listOf("dosen1", "dosen2", "dosen3"), onSelectionChanged ={} )
     }
 }
